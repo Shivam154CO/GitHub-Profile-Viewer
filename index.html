@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GitHub Profile Viewer</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="title-container">
+                    <i class="fab fa-github title-icon"></i>
+                    <h1 class="title">GitHub Profile Viewer</h1>
+                </div>
+                
+                <div class="input-section">
+                    <div class="input-wrapper">
+                        <i class="fas fa-user input-icon"></i>
+                        <input type="text" id="userID" class="input-field" placeholder="Enter GitHub Username" />
+                        <div class="input-bottom-border"></div>
+                    </div>
+                    <button id="btn" class="btn">
+                        <i class="fas fa-search btn-icon"></i>
+                        <span class="btn-text">Search</span>
+                    </button>
+                </div>
+                
+            </div>
+            
+            <div class="profile-section" id="userProfile">
+                <div class="initial-state">
+                    <div class="initial-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h2 class="initial-title">Search for a GitHub user</h2>
+                    <p class="initial-subtitle">Enter a GitHub username above to view their profile, stats, and repositories</p>
+                </div>
+            </div>
+            
+            <footer class="footer">
+                <p>Made with <i class="fas fa-heart"></i> using GitHub API</p>
+            </footer>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
